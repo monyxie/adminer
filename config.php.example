@@ -1,0 +1,8 @@
+<?php
+
+return [
+    'credentials' => ['host', 'user', 'pass'],
+    'permanentLogin' => 'permanent login key',
+    'name' => 'adminer',
+    'database' => 'database',
+];
