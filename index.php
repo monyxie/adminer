@@ -69,6 +69,18 @@ function adminer_object() {
             }
             echo "</ul>\n";
         }
+
+        function head() {
+            echo script_src('adminer.js');
+            return true;
+        }
+
+        /** Get Content Security Policy headers
+         * @return array of arrays with directive name in key, allowed sources in value
+         */
+        function csp() {
+            return csp();
+        }
     }
 
     return new AdminerSoftware(require 'config.php');
